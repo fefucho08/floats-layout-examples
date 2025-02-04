@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background: #1f1f1f;
+}
+
+nav > a {
+    vertical-align: bottom;
+}
+
+nav img {
+    max-height: 48px;
+    background-color: white;
+}
+
+nav ul,
+nav ul li,
+.spacer {
+    display: inline-block;
+}
+
+.spacer {
+    /* Parent width - Logo width - Menu <ul> width */
+    width: calc(100% - 160px - 276px);
+}
+
+nav ul {
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: rgb(82, 134, 255);
+}
+
+nav ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+#current-page {
+    color: aquamarine;
+}
+
+/* GENERAL CSS FOR MAIN SECTION */
+
+.imageContainer {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.imageContainer img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main {
+    padding: 20px;
+    min-height: 80vh;
+}
+
+main h1 {
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* CSS FOR MAIN AT INDEX */
+
+.mainIndex .imageContainer {
+    float: left;
+    margin-right: 10px;
+}
+
+/* CSS FOR MAIN AT ABOUT */
+
+.mainAbout .imageContainer {
+    float: right;
+    margin-left: 10px;
+}
+
+/* CSS FOR MAIN AT SERVICES */
+
+.mainServices .imageContainer {
+    width: 40%;
+}
+
+.mainServices .imageContainer img {
+    height: 100%;
+}
+
+.mainServices .imageContainer:first-child {
+    float: left;
+}
+
+.mainServices .imageContainer:nth-child(2) {
+    float: right;
+}
+
+.mainServices .textContainer {
+    clear: both;
+}
+
+/* ----------------------- */
+
+.backBtn {
+    background-color: rgb(82, 134, 255);
+    color: black;
+    padding: 10px;
+    position: fixed;
+    display: inline-block;
+    top: 90%;
+    left: 95%;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-weight: 600;
+
+    /*Vertical aligment*/
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer nav {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    display: inline-block;
+    color: blue;
+}
+
+footer div {
+    margin-top: 10px;
+}
